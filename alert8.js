@@ -39,3 +39,15 @@ do {
     y = prompt("input number > 100");
 }
 while (y <= 100 && y != null);
+
+////////////////////////
+
+nextPrime:
+for (var i = 2; i <= 10; i++) {
+
+    for (var j = 2; j < i; j++) {
+        if (i % j == 0) continue nextPrime;
+    }
+
+    alert(i);
+}
